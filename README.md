@@ -571,9 +571,8 @@ for i in range(K):
 
 
 Let's make sure these work. They should exhibit the quality that
-$$
-q_m^T k_n = (R^d_{\Theta, m}W_q x_m)^T (R^d_{\Theta, n} W_k x_n) = x^T W_q R^d_{\Theta, n-m} W_k x_n.
-$$
+
+$$q_m^T k_n = (R^d_{\Theta, m}W_q x_m)^T (R^d_{\Theta, n} W_k x_n) = x^T W_q R^d_{\Theta, n-m} W_k x_n.$$
 
 
 ```python
