@@ -1083,11 +1083,8 @@ train(model, optimizer)
 
 ### SwiGLU
 
-As it says in the paper, "We replace the ReLU non-linearity by the SwiGLU activation function...we use a dimension of $\frac{2}{3} 4d$ isntead of $4d$ as in PaLM." SwiGLU is defined as:
-
-$$ \text{SwiGLU}(x) = \text{Swish}_\beta (xW + b) \otimes (xV + c)$$
+As it says in the paper, "We replace the ReLU non-linearity by the SwiGLU activation function...we use a dimension of $\frac{2}{3} 4d$ isntead of $4d$ as in PaLM." SwiGLU is defined as:$$ \text{SwiGLU}(x) = \text{Swish}_\beta (xW + b) \otimes (xV + c)$$
 where $\otimes$ is a component-wise product. The Swish function is defined as:
-
 $$\text{Swish}_\beta(x) = x \sigma(\beta x)$$
 where $\beta$ is a learnable parameter.
 
